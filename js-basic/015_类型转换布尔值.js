@@ -6,6 +6,8 @@
         - 字符串：空串转换为 false，其他转换为 true
         - Null 和 Undefined：都转换为 false
         - 对象都会转换为 true
+        - 综上，所有表示空性的、没有的、错误的都会转换为false
+            - 0、NaN、空串、null、undefined、false
 */
 
 let a = 1;
