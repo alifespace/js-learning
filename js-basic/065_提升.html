@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        /*  
+            - 变量一般需要先声明，再使用
+
+            提升的目的在于提高性能，提前连续分配变量空间和函数对象空间，减少内存分配的次数
+
+            变量的提升
+                - 使用 var 声明的变量会在代码执行前被声明
+                - 所以可以在变量前访问变量（没有意义）
+                - let 声明的变量实际上也会提升，但是在赋值之前，JS解释器禁止使用该变量
+            
+            函数的提升
+                - 使用函数声明创建的函数，会在其他代码执行前被创建
+                - 所以可以在函数声明前调用函数，最好别这么做
+                - 只适用于函数声明方式的函数
+        */
+
+        console.log(a);
+
+        var a = 10;
+
+        fn1();
+
+        function fn1() {
+            alert('我是fn1函数');
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "name": "JavaScript Debug Terminal 2",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/js-basic/",
+            "program": "${file}",
+            "outputCapture": "std",
+            "console": "internalConsole",
+        }
+    ]
+}
